@@ -1,20 +1,28 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { LocalStorageService } from './local-storage.service';
 
 @Component({
   selector: 'app-calc',
   template: `
-    <p>
-      calc works!
-    </p>
+    <div class="jumbotron">
+      <input type="button" value="Progress" class="btn btn-primary" (click)="subProg()"/>
+    </div>
   `,
-  styles: [],
+  styles: [`
+    margin-top :30px;
+  `],
   encapsulation: ViewEncapsulation.None
 })
 export class CalcComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private progress: LocalStorageService
+  ) { }
 
   ngOnInit() {
   }
 
+  subProg() {
+    this.progress.emitProgress(5);
+  }
 }

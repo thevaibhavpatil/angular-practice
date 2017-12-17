@@ -11,6 +11,8 @@ import { ContententProjectionComponent } from './contentent-projection/contenten
 import { ServicesComponent } from './services/services.component';
 import { ProgressBarComponent } from './services/progress-bar.component';
 import { CalcComponent } from './services/calc.component';
+// import { LocalStorageService } from './services/local-storage.service';
+import { loginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,12 @@ import { CalcComponent } from './services/calc.component';
     ContententProjectionComponent,
     ServicesComponent,
     ProgressBarComponent,
-    CalcComponent
+    CalcComponent,
+    loginComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
