@@ -13,6 +13,16 @@ import { ProgressBarComponent } from './services/progress-bar.component';
 import { CalcComponent } from './services/calc.component';
 // import { LocalStorageService } from './services/local-storage.service';
 import { loginComponent } from './login/login.component';
+import { PassContentComponent } from './contentent-projection/pass-content.component';
+import { CollectContentComponent } from './contentent-projection/collect-content.component';
+import { AddRmvChipsComponent } from './add-rmv-chips/add-rmv-chips.component';
+import { MatChipsModule, MatFormFieldModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
+import { ButtonComponent } from './button/button.component';
+import { HttpClientModule } from '@angular/common/http';
+// import { HttpClientModule } from '@angular/common/http/src/module';
 
 @NgModule({
   declarations: [
@@ -26,11 +36,20 @@ import { loginComponent } from './login/login.component';
     ServicesComponent,
     ProgressBarComponent,
     CalcComponent,
-    loginComponent
+    loginComponent,
+    PassContentComponent,
+    CollectContentComponent,
+    AddRmvChipsComponent,
+    ButtonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatChipsModule,BrowserAnimationsModule,
+    MatButtonModule, MatCheckboxModule,
+    MatIconModule,MatFormFieldModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class PizzaPartyAppModule { }

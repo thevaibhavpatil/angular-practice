@@ -11,7 +11,7 @@ import { LocalStorageService } from './local-storage.service';
 export class ServicesComponent implements OnInit {
 
   constructor(
-    private ser : LocalStorageService
+    // private ser : LocalStorageService
   ) { }
 
   ngOnInit() {
