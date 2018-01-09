@@ -14,8 +14,8 @@ export class loginComponent implements OnInit {
 
   ngOnInit() {
   }
-  login(unm:string){
-    this.sin.verify(unm);
+  login(unm:string,pass:string){
+    this.sin.verify(unm,pass);
   }
 
 }

@@ -13,8 +13,17 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
       </p>
   </div>
   `,
-  styles: [],
-  encapsulation: ViewEncapsulation.None
+  styles: [`
+  :host-context(.act) h1 {
+    display: block;
+    background:  red;
+  }
+  :host-context(span) h1 {
+    display: block;
+    background:  lightblue;
+  }
+  `],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class JamboComponent implements OnInit {
 

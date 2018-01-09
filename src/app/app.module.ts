@@ -22,6 +22,8 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatIconModule} from '@angular/material/icon';
 import { ButtonComponent } from './button/button.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
+import { YcBorderDirective } from './custom-directives/yc-border.directive';
 // import { HttpClientModule } from '@angular/common/http/src/module';
 
 @NgModule({
@@ -40,7 +42,9 @@ import { HttpClientModule } from '@angular/common/http';
     PassContentComponent,
     CollectContentComponent,
     AddRmvChipsComponent,
-    ButtonComponent
+    ButtonComponent,
+    CustomDirectivesComponent,
+    YcBorderDirective
   ],
   imports: [
     BrowserModule,
@@ -49,6 +53,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,MatFormFieldModule,
     HttpClientModule
   ],
+  providers:[ButtonComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

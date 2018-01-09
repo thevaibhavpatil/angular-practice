@@ -4,12 +4,12 @@ import { Injectable } from '@angular/core';
 export class SignInService {
 
   constructor() { }
-  verify(unm:string){
-    if (unm==='vaibhav') {
-      console.log('login');
+  verify(unm:string,pass:string){
+    if (unm==='vaibhav' && pass==='vaibhav' ) {
+      console.log(`login ${unm} ${pass}`);
       return true;
     } else {
-      console.log('login fail');
+      console.log(`login fail ${unm} ${pass}`);
       return false;
     }
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input,Output } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,19 +7,44 @@ import { Component, OnInit, ViewEncapsulation, Input,Output } from '@angular/cor
   encapsulation: ViewEncapsulation.None
 })
 export class ButtonComponent implements OnInit {
-  @Input () name:string;
-  @Input () color ?:string;
-  @Input () height ?:string;
-  @Input () width ?:string;
-  @Input () radious ?:string;
-  @Output () btnwidth;
+  public name1;
+  @Input () name:string='Button';
+  @Input () color ?:string='initial';
+  @Input () height ?:string='initial';
+  @Input () width ?:string='initial';
+  @Input () radious ?:string='initial';
+  @Output () onNameChange=new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
+    this.name1=this.name;
   }
-
-  is_click(){
-    console.log('click works');
+  changeName(){
+    this.name1='new Button';
+    this.onNameChange.emit('new Button');
   }
-
+  resetName(){
+    this.onNameChange.emit('Button');
+  }
+  setStyleDefault({nm ='Button',hgt='initial',wdt='initial',clr='initial',rdus=""}: {nm:string,clr:string,hgt:string,wdt:string,rdus:string}){
+    this.name=nm;
+    this.color=clr;
+    this.width=wdt;
+    this.height=hgt;
+    this.radious=rdus;
+}
+setStyle(nm?:string,clr?:string,hgt?:string,wdt?:string,rdus?:string){
+  this.name=nm;
+  this.color=clr;
+  this.width=wdt;
+  this.height=hgt;
+  this.radious=rdus;
+}
+setStyleObj(obj: {nm:string,clr:string,hgt:string,wdt:string,rdus:string}){
+  this.name=obj.nm;
+  this.color=obj.clr;
+  this.width=obj.wdt;
+  this.height=obj.hgt;
+  this.radious=obj.rdus;
+}
 }

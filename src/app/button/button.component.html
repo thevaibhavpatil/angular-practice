@@ -1,1 +1,1 @@
-<button  [ngStyle]="{'background-color': color, 'height': height,'width':width,'border-radious':radious}" >{{name}}</button>
+<button (click)="changeName()" (dblclick)="resetName()" [ngStyle]="{'background-color': color, 'height': height,'width':width,'border-radious':radious}" >{{name}}</button>

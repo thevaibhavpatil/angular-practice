@@ -1,3 +1,11 @@
+:host(.act){
+    display: block;
+    background:  pink;
+}
+:host(.abc){
+    display: block;
+    background:  orangered;
+}
 .card{
     margin: 50px;
 }

@@ -1,3 +1,3 @@
 <input type="text" #unm [ngStyle]="{'display': 'flex'}">
 <input type="text" #pass [ngStyle]="{'display': 'flex'}" placeholder="password">
-<input type="button" value="login" (click)="login(unm.value)" [ngStyle]="{'display': 'flex'}">
+<input type="button" value="login" (click)="login(unm.value,pass.value)" [ngStyle]="{'display': 'flex'}">
