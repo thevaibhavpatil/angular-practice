@@ -1,0 +1,8 @@
+.card-body {
+  background-color: red;
+}
+:host {
+  background: pink;
+  display: block;
+  height: 200px;
+}

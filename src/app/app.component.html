@@ -1,6 +1,6 @@
 <!-- <app-first></app-first> -->
-<app-cards class="act"></app-cards>
-<app-cards class="abc"></app-cards>
+<!-- <app-cards class="act"></app-cards> -->
+<!-- <app-cards class="abc"></app-cards> -->
 <!-- <app-services></app-services> -->
 <!-- <app-contentent-projection></app-contentent-projection> -->
 <!-- <app-add-rmv-chips></app-add-rmv-chips> -->
@@ -11,8 +11,13 @@
 
 <!-- data pass form child to parent -->
 <!-- {{title}} -->
-<!-- <app-button [name]="title" (onNameChange)="onEventTrigger($event)" ></app-button> -->
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe atque sunt illo itaque ab rem quo ex possimus aspernatur recusandae sed exercitationem fuga maxime quae voluptatem, minus ut rerum numquam!
-</p>
-<app-custom-directives></app-custom-directives>
+<!--     [name]="title" (onNameChange)="onEventTrigger($event)" ></app-button> -->
+<!-- <app-custom-directives></app-custom-directives> -->
+
+<div class="container testClass">
+    <div class="row">
+        <div class="col-xs-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

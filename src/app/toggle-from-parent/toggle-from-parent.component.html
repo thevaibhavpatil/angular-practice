@@ -1,0 +1,39 @@
+<h1>Toggle on parent component</h1>
+<button  (click)="change()">checkcodecomp</button>
+
+<div *ngIf="tog" class="card text-white bg-primary">
+    
+  <img class="card-img-top" src="holder.js/100px180/" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Title</h4>
+    <p class="card-text">Text</p>
+  </div>
+</div>
+
+<!-- <div class="container-fluid floating-container "> -->
+  <!-- <div class="container-fluid drpdwn-wrapper" *ngIf="!isdisplay" (click)='display()'>
+  </div> -->
+  <!-- <div class="row">
+    <div class="col-1 ml-auto mr-5 mr-lg-0">
+      <div *ngIf="isBrsr" class="d-inline-block  floating-wrapper ">
+        <button type="button" *ngIf="isBrsr" class="btn fab-btn-mob" (click)="display()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+          <i class="material-icons" *ngIf="isCollapsed">add</i>
+          <i class="material-icons" *ngIf="!isCollapsed">remove</i>
+        </button>
+        <div id="dropdown-menu"  *ngIf="isCollapsed" >
+            <div class="dropdown-btn">
+                <button class="floating-icon" mat-fab routerLink="comingSoon">
+                  <i class="material-icons ">search</i>
+                </button>
+                <button class="floating-icon" mat-fab (click)="openAskFaiModal()">
+                  <i class="material-icons ">account_circle</i>
+                </button>
+                <button class="floating-icon" mat-fab routerLink="comingSoon">
+                  <i class="material-icons ">flag</i>
+                </button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

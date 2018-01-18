@@ -9,7 +9,7 @@ export class YcBorderDirective implements OnInit  {
   @Input() brStyle:string;
   @Input() brRadius:string;
   div:any;
-  constructor(private elRef:ElementRef,private renderer: Renderer2) { 
+  constructor(private elRef?:ElementRef,private renderer?: Renderer2) { 
    }
    ngOnInit(){
     this.renderer.setStyle(this.elRef.nativeElement,'border','1px');

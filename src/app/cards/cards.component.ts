@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, ElementRef, Renderer2, ViewChild, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-cards',
+  selector: 'yc-cards',
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.css'],
   encapsulation: ViewEncapsulation.Emulated

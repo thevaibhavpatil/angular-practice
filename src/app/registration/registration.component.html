@@ -1,0 +1,13 @@
+<form id=formId (ngSubmit)="signUp(refForm)" #refForm="ngForm">
+  <div class="container-fluid">
+    <label for="nm">Name</label >
+    <input type="text" name="Name" id="unm" ngModel>
+    <label for="email">Email</label>
+    <input type="email" name="Email" id="email" ngModel>
+    <label for="pass">Password</label>
+    <input type="password" name="Password" id="pass" ngModel>
+    <label for="confpass">Conform Password</label>
+    <input type="password" name="Conform Password" id="confpass" ngModel>
+    <input type="submit" value="sign up" >
+  </div>
+</form>

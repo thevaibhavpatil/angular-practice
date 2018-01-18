@@ -18,7 +18,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
     display: block;
     background:  red;
   }
-  :host-context(span) h1 {
+  :host-context(.testClass) h1 {
     display: block;
     background:  lightblue;
   }

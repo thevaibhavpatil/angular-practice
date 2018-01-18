@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
@@ -21,10 +23,18 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatIconModule} from '@angular/material/icon';
 import { ButtonComponent } from './button/button.component';
-import { HttpClientModule } from '@angular/common/http';
+// import { HttpClientModule } from '@angular/common/http';
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 import { YcBorderDirective } from './custom-directives/yc-border.directive';
-// import { HttpClientModule } from '@angular/common/http/src/module';
+import { MyRouterModule } from './app.routing';
+import { FirebaseHttpComponent } from './firebase-http/firebase-http.component';
+import { Http } from '@angular/http';
+import { FirebaseconnectService } from './firebase-http/firebaseconnect.service';
+import { RegistrationComponent } from './registration/registration.component';
+import { FormsModule } from '@angular/forms';
+import { ToggleFromParentComponent} from './toggle-from-parent/toggle-from-parent.component';
+import { ToggleParentComponent } from './toggle-from-parent/toggle-parent.component';
+
 
 @NgModule({
   declarations: [
@@ -44,16 +54,23 @@ import { YcBorderDirective } from './custom-directives/yc-border.directive';
     AddRmvChipsComponent,
     ButtonComponent,
     CustomDirectivesComponent,
-    YcBorderDirective
+    YcBorderDirective,
+    FirebaseHttpComponent,
+    RegistrationComponent,
+    ToggleFromParentComponent,
+    ToggleParentComponent
   ],
   imports: [
     BrowserModule,
     MatChipsModule,BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,
     MatIconModule,MatFormFieldModule,
-    HttpClientModule
+    HttpClientModule,
+    MyRouterModule,
+    HttpModule,
+    FormsModule
   ],
-  providers:[ButtonComponent],
+  providers:[ButtonComponent,FirebaseconnectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
