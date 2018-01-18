@@ -34,6 +34,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { FormsModule } from '@angular/forms';
 import { ToggleFromParentComponent} from './toggle-from-parent/toggle-from-parent.component';
 import { ToggleParentComponent } from './toggle-from-parent/toggle-parent.component';
+import { TestlessComponent } from './testless/testless.component';
 
 
 @NgModule({
@@ -54,11 +55,12 @@ import { ToggleParentComponent } from './toggle-from-parent/toggle-parent.compon
     AddRmvChipsComponent,
     ButtonComponent,
     CustomDirectivesComponent,
-    YcBorderDirective,
+    YcBorderDirective, 
     FirebaseHttpComponent,
     RegistrationComponent,
     ToggleFromParentComponent,
-    ToggleParentComponent
+    ToggleParentComponent,
+    TestlessComponent,
   ],
   imports: [
     BrowserModule,
