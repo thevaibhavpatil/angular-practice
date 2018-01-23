@@ -1,0 +1,12 @@
+.wrapper .box1 {
+  grid-column: 0.33333333;
+  grid-row-start: 1 / auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.wrapper .box1 .nested {
+  background-color: aqua;
+}
+.wrapper .box2 {
+  grid-area: 1;
+}

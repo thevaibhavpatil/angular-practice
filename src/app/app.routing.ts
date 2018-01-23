@@ -10,6 +10,7 @@ import { loginComponent } from "./login/login.component";
 import { FirebaseHttpComponent } from "./firebase-http/firebase-http.component";
 import { RegistrationComponent } from "./registration/registration.component";
 import { ToggleParentComponent } from "./toggle-from-parent/toggle-parent.component";
+import { GridUseComponent } from "./grid-use/grid-use.component";
     
 const APP_ROUTING = [
     {path:'', component:loginComponent},
@@ -22,8 +23,8 @@ const APP_ROUTING = [
     {path:'view_encapsulation',component:EncapsupationComponent},
     {path:'firebase',component:FirebaseHttpComponent},
     {path:'register',component:RegistrationComponent},
-    {path:'togglefromparent',component:ToggleParentComponent}
-    
+    {path:'togglefromparent',component:ToggleParentComponent},
+    {path:'grid',component:GridUseComponent}
 ];
 
 export const MyRouterModule = RouterModule.forRoot(APP_ROUTING);

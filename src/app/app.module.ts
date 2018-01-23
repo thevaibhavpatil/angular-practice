@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { CardsComponent } from './cards/cards.component';
@@ -35,6 +34,9 @@ import { FormsModule } from '@angular/forms';
 import { ToggleFromParentComponent} from './toggle-from-parent/toggle-from-parent.component';
 import { ToggleParentComponent } from './toggle-from-parent/toggle-parent.component';
 import { TestlessComponent } from './testless/testless.component';
+import { GridUseComponent } from './grid-use/grid-use.component';
+import { CustomDecoretorsComponent } from './custom-decoretors/custom-decoretors.component';
+import { CustomCommonModulesModule } from './common-modules/custom-common-modules.module';
 
 
 @NgModule({
@@ -53,7 +55,6 @@ import { TestlessComponent } from './testless/testless.component';
     PassContentComponent,
     CollectContentComponent,
     AddRmvChipsComponent,
-    ButtonComponent,
     CustomDirectivesComponent,
     YcBorderDirective, 
     FirebaseHttpComponent,
@@ -61,6 +62,8 @@ import { TestlessComponent } from './testless/testless.component';
     ToggleFromParentComponent,
     ToggleParentComponent,
     TestlessComponent,
+    GridUseComponent,
+    CustomDecoretorsComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,7 +73,8 @@ import { TestlessComponent } from './testless/testless.component';
     HttpClientModule,
     MyRouterModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    CustomCommonModulesModule
   ],
   providers:[ButtonComponent,FirebaseconnectService],
   bootstrap: [AppComponent]

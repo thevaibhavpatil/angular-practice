@@ -1,0 +1,16 @@
+.wrapper {
+    .box1 {
+        grid-column: 1/3;
+        // grid-column-end: 3;
+        grid-row-start: 1/auto;
+        // grid-row-end:auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .nested {
+            background-color: aqua;
+        }
+    }
+    .box2{
+        grid-area: 1
+    }
+}
