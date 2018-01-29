@@ -1,0 +1,7 @@
+<div class="container-fluid" *ngFor="let item of list ; let i=index">
+    <div> <!-- *ngIf="i!=confIndex" -->
+        <h1> {{item}}  </h1>
+       conform Index {{confIndex}} loop Index {{i}}
+        <yc-delet-operation [arrIndex]="i"></yc-delet-operation>
+    </div>
+</div>
