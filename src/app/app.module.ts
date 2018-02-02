@@ -18,9 +18,9 @@ import { PassContentComponent } from './contentent-projection/pass-content.compo
 import { CollectContentComponent } from './contentent-projection/collect-content.component';
 import { AddRmvChipsComponent } from './add-rmv-chips/add-rmv-chips.component';
 import { MatChipsModule, MatFormFieldModule } from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
 import { ButtonComponent } from './button/button.component';
 // import { HttpClientModule } from '@angular/common/http';
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
@@ -31,7 +31,7 @@ import { Http } from '@angular/http';
 import { FirebaseconnectService } from './firebase-http/firebaseconnect.service';
 import { RegistrationComponent } from './registration/registration.component';
 import { FormsModule } from '@angular/forms';
-import { ToggleFromParentComponent} from './toggle-from-parent/toggle-from-parent.component';
+import { ToggleFromParentComponent } from './toggle-from-parent/toggle-from-parent.component';
 import { ToggleParentComponent } from './toggle-from-parent/toggle-parent.component';
 import { TestlessComponent } from './testless/testless.component';
 import { GridUseComponent } from './grid-use/grid-use.component';
@@ -64,7 +64,7 @@ import { LearnHttpComponent } from './learn-http/learn-http.component';
     CollectContentComponent,
     AddRmvChipsComponent,
     CustomDirectivesComponent,
-    YcBorderDirective, 
+    YcBorderDirective,
     FirebaseHttpComponent,
     RegistrationComponent,
     ToggleFromParentComponent,
@@ -78,20 +78,20 @@ import { LearnHttpComponent } from './learn-http/learn-http.component';
     DeletOperationComponent,
     DataDisplayComponent,
     ReadMoreDirective,
-    LearnHttpComponent,
+
   ],
   imports: [
     BrowserModule,
-    MatChipsModule,BrowserAnimationsModule,
+    MatChipsModule, BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,
-    MatIconModule,MatFormFieldModule,
+    MatIconModule, MatFormFieldModule,
     HttpClientModule,
     MyRouterModule,
     HttpModule,
     FormsModule,
     CustomCommonModulesModule
   ],
-  providers:[ButtonComponent,FirebaseconnectService,DataDeleteService],
+  providers: [ButtonComponent, FirebaseconnectService, DataDeleteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -22,7 +22,6 @@ export class DataDisplayComponent implements OnInit,OnChanges {
     'item 4',
     'item 5',
     'item 6'
-
   ]
   constructor(private _dataDelete ?:DataDeleteService) { }
 
