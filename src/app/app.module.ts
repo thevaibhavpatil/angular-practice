@@ -78,6 +78,7 @@ import { LearnHttpComponent } from './learn-http/learn-http.component';
     DeletOperationComponent,
     DataDisplayComponent,
     ReadMoreDirective,
+    LearnHttpComponent
 
   ],
   imports: [
