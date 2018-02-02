@@ -11,6 +11,10 @@ import { FirebaseHttpComponent } from "./firebase-http/firebase-http.component";
 import { RegistrationComponent } from "./registration/registration.component";
 import { ToggleParentComponent } from "./toggle-from-parent/toggle-parent.component";
 import { GridUseComponent } from "./grid-use/grid-use.component";
+import { NgforComponent } from "./ngfor/ngfor.component";
+import { FlexComponent } from "./flex/flex.component";
+import { InterComponentCommunicationComponent } from "./inter-component-communication/inter-component-communication.component";
+import { LearnHttpComponent } from "./learn-http/learn-http.component";
     
 const APP_ROUTING = [
     {path:'', component:loginComponent},
@@ -24,7 +28,11 @@ const APP_ROUTING = [
     {path:'firebase',component:FirebaseHttpComponent},
     {path:'register',component:RegistrationComponent},
     {path:'togglefromparent',component:ToggleParentComponent},
-    {path:'grid',component:GridUseComponent}
+    {path:'grid',component:GridUseComponent},
+    {path:'ngfor',component:NgforComponent },
+    {path:'flex',component:FlexComponent },
+    {path:'datadelete',component:InterComponentCommunicationComponent },
+    {path:'http',component:LearnHttpComponent },
 ];
 
 export const MyRouterModule = RouterModule.forRoot(APP_ROUTING);

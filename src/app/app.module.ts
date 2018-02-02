@@ -37,6 +37,14 @@ import { TestlessComponent } from './testless/testless.component';
 import { GridUseComponent } from './grid-use/grid-use.component';
 import { CustomDecoretorsComponent } from './custom-decoretors/custom-decoretors.component';
 import { CustomCommonModulesModule } from './common-modules/custom-common-modules.module';
+import { NgforComponent } from './ngfor/ngfor.component';
+import { FlexComponent } from './flex/flex.component';
+import { InterComponentCommunicationComponent } from './inter-component-communication/inter-component-communication.component';
+import { DeletOperationComponent } from './inter-component-communication/delet-operation/delet-operation.component';
+import { DataDisplayComponent } from './inter-component-communication/data-display/data-display.component';
+import { DataDeleteService } from './inter-component-communication/data-delete.service';
+import { ReadMoreDirective } from './read-more.directive';
+import { LearnHttpComponent } from './learn-http/learn-http.component';
 
 
 @NgModule({
@@ -64,6 +72,13 @@ import { CustomCommonModulesModule } from './common-modules/custom-common-module
     TestlessComponent,
     GridUseComponent,
     CustomDecoretorsComponent,
+    NgforComponent,
+    FlexComponent,
+    InterComponentCommunicationComponent,
+    DeletOperationComponent,
+    DataDisplayComponent,
+    ReadMoreDirective,
+    LearnHttpComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,7 +91,7 @@ import { CustomCommonModulesModule } from './common-modules/custom-common-module
     FormsModule,
     CustomCommonModulesModule
   ],
-  providers:[ButtonComponent,FirebaseconnectService],
+  providers:[ButtonComponent,FirebaseconnectService,DataDeleteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

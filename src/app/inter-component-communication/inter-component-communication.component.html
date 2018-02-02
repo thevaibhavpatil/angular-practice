@@ -1,0 +1,11 @@
+<yc-data-display [toggle]="item" [confIndex]="delIndex"></yc-data-display>
+<!-- <yc-delet-operation></yc-delet-operation> -->
+<div class="container-fluid" *ngIf="index!=-1"  > <!-- *ngIf="arrIndex!=-1" -->
+  <div class="alert alert-warning alert-dismissible">
+    <div>You want to delete data</div>
+    {{index}}
+    <button type="button" (click)="delConform()" >
+        conform
+    </button>
+  </div>
+</div>

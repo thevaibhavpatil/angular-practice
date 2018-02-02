@@ -1,0 +1,16 @@
+.row1 {
+  display: flex;
+}
+.row1 .box {
+  height: 20px;
+  flex-basis: 200px;
+}
+.row1 .orange {
+  background-color: orangered;
+}
+.row1 .green {
+  background-color: green;
+}
+.row1 .blue {
+  background-color: blue;
+}
