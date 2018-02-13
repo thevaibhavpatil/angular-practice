@@ -1,0 +1,9 @@
+<div class="container-fluid">
+    <helix-pvdr-detail-design1
+        *ngFor="let pvdrDetail of pvdrDetails;let i=index"
+        [heading]="pvdrDetail.heading"
+        [img]="pvdrDetail.img"
+        [pvrdDetailList]="pvdrDetail"
+    ></helix-pvdr-detail-design1>
+    {{pvdrDetails}}
+</div>

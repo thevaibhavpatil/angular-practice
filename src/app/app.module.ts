@@ -45,6 +45,8 @@ import { DataDisplayComponent } from './inter-component-communication/data-displ
 import { DataDeleteService } from './inter-component-communication/data-delete.service';
 import { ReadMoreDirective } from './read-more.directive';
 import { LearnHttpComponent } from './learn-http/learn-http.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { DestructuringComponent } from './typescript/destructuring/destructuring.component';
 
 
 @NgModule({
@@ -78,7 +80,9 @@ import { LearnHttpComponent } from './learn-http/learn-http.component';
     DeletOperationComponent,
     DataDisplayComponent,
     ReadMoreDirective,
-    LearnHttpComponent
+    LearnHttpComponent,
+    FileUploadComponent,
+    DestructuringComponent
 
   ],
   imports: [

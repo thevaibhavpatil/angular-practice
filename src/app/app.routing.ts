@@ -15,16 +15,19 @@ import { NgforComponent } from "./ngfor/ngfor.component";
 import { FlexComponent } from "./flex/flex.component";
 import { InterComponentCommunicationComponent } from "./inter-component-communication/inter-component-communication.component";
 import { LearnHttpComponent } from "./learn-http/learn-http.component";
+import { FirstComponent } from "./first/first.component";
+import { FileUploadComponent } from "./file-upload/file-upload.component";
+import { DestructuringComponent } from "./typescript/destructuring/destructuring.component";
     
 const APP_ROUTING = [
     {path:'', component:loginComponent},
     { path:'button', component: ButtonComponent },
-    {path:'content_projection',component: ContententProjectionComponent},
+    {path:'contentprojection',component: ContententProjectionComponent},
     {path:'cards',component:CardsComponent},
-    {path:'star_rating',component:StarRatingComponent},
-    {path:'custom_derectives',component:CustomDirectivesComponent},
+    {path:'starrating',component:StarRatingComponent},
+    {path:'customderectives',component:CustomDirectivesComponent},
     {path:'service',component:ServicesComponent},
-    {path:'view_encapsulation',component:EncapsupationComponent},
+    {path:'viewencapsulation',component:EncapsupationComponent},
     {path:'firebase',component:FirebaseHttpComponent},
     {path:'register',component:RegistrationComponent},
     {path:'togglefromparent',component:ToggleParentComponent},
@@ -33,6 +36,12 @@ const APP_ROUTING = [
     {path:'flex',component:FlexComponent },
     {path:'datadelete',component:InterComponentCommunicationComponent },
     {path:'http',component:LearnHttpComponent },
+    {path:'first',component:FirstComponent },
+    {path:'fileupload',component:FileUploadComponent },
+    {path:'destructuring',component:DestructuringComponent },
+    
+    {path:'providerprofile',loadChildren:'./provider-profile/provider-profile.module#ProviderProfileModule' }    
+       
 ];
 
 export const MyRouterModule = RouterModule.forRoot(APP_ROUTING);

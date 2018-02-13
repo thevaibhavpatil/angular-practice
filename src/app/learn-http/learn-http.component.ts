@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Http } from '@angular/http';
+import 'rxjs/add/operator/toPromise';
 
 @Component({
   selector: 'yc-learn-http',
@@ -9,7 +10,7 @@ import { Http } from '@angular/http';
 })
 export class LearnHttpComponent implements OnInit {
 
-  apiRoot: string = "http://httpbin.org";
+  apiRoot: string = "localhost:4200";
 
   constructor(private http: Http) { }
   ngOnInit(): void {
@@ -17,28 +18,42 @@ export class LearnHttpComponent implements OnInit {
 
   doGET() {
     console.log("GET");
-    let url = `${this.apiRoot}/get`;
+    let url = `/assets/cacheEntry.json`;
     let search = new URLSearchParams();
     search.set('foo', 'moo');
-    search.set('limit', 25);
-    this.http.get(url, { search: search }).subscribe(res => console.log(res.json()));
+    search.set('limit', '25');
+    this.http.get(url).subscribe(res => console.log(res.json()));/* , { search: search } */
   }
   doPOST() {
     console.log("POST");
-    let url = `${this.apiRoot}/delete`;
-    let search = new URLSearchParams();
-    search.set('foo', 'moo');
-    search.set('limit', 25);
-    this.http.delete(url, { search }).subscribe(res => console.log(res.json()));
+    let url = `${this.apiRoot}/post`;
+    this.http.post(url, { moo: "foo", goo: "loo" }).subscribe(res =>
+      console.log(res.json()));
   }
   doPUT() {
     console.log("PUT");
+    let url = `${this.apiRoot}/put`;
+    let search = new URLSearchParams();
+    search.set('foo', 'moo');
+    search.set('limit', '25');
+    this.http.put(url, { moo: "foo", goo: "loo" }, { search }).subscribe(res =>
+      console.log(res.json()));
   }
   doDELETE() {
     console.log("DELETE");
+    let url = `${this.apiRoot}/delete`;
+    let search = new URLSearchParams();
+    search.set('foo', 'moo');
+    search.set('limit', '25');
+    this.http.delete(url, { search }).subscribe(res => console.log(res.json()));
+
   }
   doGETAsPromise() {
     console.log("GET AS PROMISE");
+    let url = `${this.apiRoot}/get`;
+    this.http.get(url)
+      .toPromise()
+      .then(res => console.log(res.json()));
   }
   doGETAsPromiseError() {
     console.log("GET AS PROMISE ERROR");
@@ -49,6 +64,4 @@ export class LearnHttpComponent implements OnInit {
   doGETWithHeaders() {
     console.log("GET WITH HEADERS");
   }
-}
-
 }

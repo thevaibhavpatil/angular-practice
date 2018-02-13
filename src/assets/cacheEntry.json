@@ -1,0 +1,13 @@
+{
+  "oneOf": [{
+    "type": "kore",
+    "optional": "xxxxxxx",
+    "required": "girl Friend",
+    "properties": "abbbbbb"
+  },{
+    "type": "shewal",
+    "optional": "xxx",
+    "required": "boy friend",
+    "properties": "gukau"
+  }]
+}

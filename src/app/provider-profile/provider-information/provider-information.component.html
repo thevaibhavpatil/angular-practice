@@ -1,0 +1,62 @@
+<div class="container-fluid pvdr-info">
+    <div class="row justify-content-center ">
+        <div class="col-8 col-sm-6 col-md-10 mt-5">
+            <img class="rounded-circle pvdr-img w-100 mt-4"
+             alt=""> <!--  src= "{{imgBasePath + profData.userProfileImgPath}}" -->
+        </div>
+    </div>
+    <div class="row pvflHeader-row mt-4 d-none d-md-block">
+        <div class="col-md-10 pvflHeader-col pr-md-0 pl-md-2">
+            <h5 class="pvflHeader-h5 pr-md-0">Profile Information</h5>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-8 col-sm-6 col-md-10 mx-auto">
+            <div class="row align-items-center">
+                <!-- <div class=" pr-0 text-left"> -->
+                <img class="rounded-circle pvdrSm-img mx-auto" alt=""><!-- [src] ="imgBasePath+imgPath"  -->
+                <!-- </div> -->
+                <div class=" pvflNm-col pr-md-0 pl-2 mx-auto">
+                    <h5 class="pvflAliasNm pr-md-0 text-uppercase font-weight-bold mx-auto"><!-- {{profData.userAliasName}} --></h5>
+                    <h5 class="pvflNm pr-md-0 text-capitalize mx-auto"><!-- {{profData.userFirstName}} {{profData.userLastName}} --></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-8 col-sm-6 col-md-10 px-0">
+            <h5 class="pvdr-time">
+                <span class="time-head font-weight-bold">Time Zone</span>
+                <span class="time"><!-- {{profData.userTimezone}} --></span>
+            </h5>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-8 col-sm-6 col-md-10 px-0">
+            <div class="pvdr-channel">
+                <h5 class="channel-head font-weight-bold">Channel Avalible</h5>
+                <ul class="channel-ul">
+                    <li class="channel-li" *ngFor="let channel of channels; let ind = index"><!-- {{channel}} --><span class="d-md-none" *ngIf="ind != langs.length-1">,</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3 d-none d-md-flex">
+        <div class="col-8 col-sm-6 col-md-10 px-0">
+            <div class="pvdr-lang">
+                <h5 class="lang-head font-weight-bold">Language</h5>
+                <ul class="lang-ul">
+                    <li class="lang-li" *ngFor="let lang of langs; let ind = index"><!-- {{lang}} --><span *ngIf="ind !=langs.length-1">,</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3 d-none d-md-flex">
+        <div class="col-8 col-sm-6 col-md-10 px-0">
+            <a class="trial-link text-uppercase">
+                FREE TRIAL <br>20 MIN TALK OVER SKYPE
+            </a>
+        </div>
+    </div>
+<!-- </div> -->
