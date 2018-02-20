@@ -18,6 +18,7 @@ import { LearnHttpComponent } from "./learn-http/learn-http.component";
 import { FirstComponent } from "./first/first.component";
 import { FileUploadComponent } from "./file-upload/file-upload.component";
 import { DestructuringComponent } from "./typescript/destructuring/destructuring.component";
+import { StatePatternComponent } from "./calisthenics-rules/state-pattern/state-pattern.component";
     
 const APP_ROUTING = [
     {path:'', component:loginComponent},
@@ -39,6 +40,8 @@ const APP_ROUTING = [
     {path:'first',component:FirstComponent },
     {path:'fileupload',component:FileUploadComponent },
     {path:'destructuring',component:DestructuringComponent },
+    {path:'statepattern/:flag',component:StatePatternComponent },
+    
     
     {path:'providerprofile',loadChildren:'./provider-profile/provider-profile.module#ProviderProfileModule' }    
        

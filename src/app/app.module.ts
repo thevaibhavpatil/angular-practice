@@ -30,7 +30,7 @@ import { FirebaseHttpComponent } from './firebase-http/firebase-http.component';
 import { Http } from '@angular/http';
 import { FirebaseconnectService } from './firebase-http/firebaseconnect.service';
 import { RegistrationComponent } from './registration/registration.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToggleFromParentComponent } from './toggle-from-parent/toggle-from-parent.component';
 import { ToggleParentComponent } from './toggle-from-parent/toggle-parent.component';
 import { TestlessComponent } from './testless/testless.component';
@@ -47,6 +47,7 @@ import { ReadMoreDirective } from './read-more.directive';
 import { LearnHttpComponent } from './learn-http/learn-http.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { DestructuringComponent } from './typescript/destructuring/destructuring.component';
+import { StatePatternComponent } from './calisthenics-rules/state-pattern/state-pattern.component';
 
 
 @NgModule({
@@ -82,7 +83,8 @@ import { DestructuringComponent } from './typescript/destructuring/destructuring
     ReadMoreDirective,
     LearnHttpComponent,
     FileUploadComponent,
-    DestructuringComponent
+    DestructuringComponent,
+    StatePatternComponent
 
   ],
   imports: [
@@ -94,9 +96,15 @@ import { DestructuringComponent } from './typescript/destructuring/destructuring
     MyRouterModule,
     HttpModule,
     FormsModule,
-    CustomCommonModulesModule
+    CustomCommonModulesModule,
+    ReactiveFormsModule
   ],
-  providers: [ButtonComponent, FirebaseconnectService, DataDeleteService],
+ 
+    providers: [
+    ButtonComponent,
+    FirebaseconnectService,
+    DataDeleteService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

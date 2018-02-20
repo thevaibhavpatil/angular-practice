@@ -10,7 +10,7 @@ import { OnChanges } from '@angular/core';
 export class AppComponent implements OnChanges {
   
   tog:boolean=true;
-  
+  action:any;
   @Input()
   title = true;
   clk:ButtonComponent=new ButtonComponent;
