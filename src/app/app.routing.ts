@@ -42,9 +42,11 @@ const APP_ROUTING = [
     {path:'fileupload',component:FileUploadComponent },
     {path:'destructuring',component:DestructuringComponent },
     {path:'statepattern/:flag',component:StatePatternComponent },
-    {path:'pdfgenerate',component:PdfGenerateComponent },   
+    // {path:'pdfgenerate',component:PdfGenerateComponent },   
     
-    {path:'providerprofile',loadChildren:'./provider-profile/provider-profile.module#ProviderProfileModule' }    
+    {path:'providerprofile',loadChildren:'./provider-profile/provider-profile.module#ProviderProfileModule'},
+    {path:'customevents',loadChildren:'./custom-events/custom-events.module#CustomEventsModule'}
+
        
 ];
 

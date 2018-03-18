@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-import { PdfmakeModule } from 'ng-pdf-make';
 
 /* ------------------- created Components ------------------------- */
 import { AppComponent } from './app.component';
@@ -89,7 +88,7 @@ import { PdfGenerateComponent } from './pdf-generate/pdf-generate.component';
     FileUploadComponent,
     DestructuringComponent,
     StatePatternComponent,
-    PdfGenerateComponent
+    // PdfGenerateComponent
 
   ],
   imports: [
@@ -102,8 +101,7 @@ import { PdfGenerateComponent } from './pdf-generate/pdf-generate.component';
     HttpModule,
     FormsModule,
     CustomCommonModulesModule,
-    ReactiveFormsModule,
-    PdfmakeModule
+    ReactiveFormsModule
   ],
  
     providers: [
