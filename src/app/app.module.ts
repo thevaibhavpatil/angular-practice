@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { PdfmakeModule } from 'ng-pdf-make';
+
+/* ------------------- created Components ------------------------- */
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { CardsComponent } from './cards/cards.component';
@@ -48,6 +51,7 @@ import { LearnHttpComponent } from './learn-http/learn-http.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { DestructuringComponent } from './typescript/destructuring/destructuring.component';
 import { StatePatternComponent } from './calisthenics-rules/state-pattern/state-pattern.component';
+import { PdfGenerateComponent } from './pdf-generate/pdf-generate.component';
 
 
 @NgModule({
@@ -84,7 +88,8 @@ import { StatePatternComponent } from './calisthenics-rules/state-pattern/state-
     LearnHttpComponent,
     FileUploadComponent,
     DestructuringComponent,
-    StatePatternComponent
+    StatePatternComponent,
+    PdfGenerateComponent
 
   ],
   imports: [
@@ -97,7 +102,8 @@ import { StatePatternComponent } from './calisthenics-rules/state-pattern/state-
     HttpModule,
     FormsModule,
     CustomCommonModulesModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PdfmakeModule
   ],
  
     providers: [

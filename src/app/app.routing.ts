@@ -19,6 +19,7 @@ import { FirstComponent } from "./first/first.component";
 import { FileUploadComponent } from "./file-upload/file-upload.component";
 import { DestructuringComponent } from "./typescript/destructuring/destructuring.component";
 import { StatePatternComponent } from "./calisthenics-rules/state-pattern/state-pattern.component";
+import { PdfGenerateComponent } from "./pdf-generate/pdf-generate.component";
     
 const APP_ROUTING = [
     {path:'', component:loginComponent},
@@ -41,7 +42,7 @@ const APP_ROUTING = [
     {path:'fileupload',component:FileUploadComponent },
     {path:'destructuring',component:DestructuringComponent },
     {path:'statepattern/:flag',component:StatePatternComponent },
-    
+    {path:'pdfgenerate',component:PdfGenerateComponent },   
     
     {path:'providerprofile',loadChildren:'./provider-profile/provider-profile.module#ProviderProfileModule' }    
        
